@@ -1,0 +1,389 @@
+:root{
+    --Dark-Green: #56763C ;
+    --Light-Gold: #EED797 ;
+    --Off-White: #EAECE3 ;
+    --Soft-Brown: #D7A389 ;
+    --Deep-Red: #540C0B;
+    --Dark-Gray:#333333;
+    
+    /*shadow color*/
+
+    --shadow-color: rgba(0, 0, 0, 0.2); 
+}
+
+
+/*landing-page section*/
+.landing-page{
+    max-width: 70%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    border:2px ;
+    box-shadow: 0.25rem 0.25rem 0.25rem var(--shadow-color);
+    border-radius: 10px;
+    margin-top: 9rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header{
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color:var(--Dark-Green);
+    text-align:center;
+}
+.page-header2{
+
+    color: var(--Soft-Brown);
+    text-align: center;
+    font-family:"Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+.paragraph{
+
+    color: var(--Dark-Gray);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+}
+
+.Cta-btn{
+    font-family:"Poppins", sans-serif;
+    font-size: 16px;
+    background-color: var(--Light-Gold);
+    color: var(--Deep-Red);
+    Padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    font-weight:bolder ;
+  
+}
+.Cta-btn:hover{
+    background-color: var(--Dark-Green);
+    color:#ffffff;
+}
+
+/*About us section*/
+#section{
+    margin-top: 5rem;
+}
+section p{
+    color: var(--Dark-Gray);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+
+}
+.section-header{
+
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color:var(--Dark-Green);
+    text-align:center;
+}
+
+.section-header2{
+
+    color: var(--Soft-Brown);
+    text-align: center;
+    font-family:"Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+/*Team-cards*/
+.team-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5.5rem;
+    
+ 
+}
+.card{
+
+    background-color: #ffffff;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 20rem;
+    max-width: 80%;
+    
+}
+.team-card-container h3{
+
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+    color:var(--Dark-Green);
+}
+.p1{
+    color: var(--Soft-Brown);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size:14px;
+    font-style: italic;
+   
+}
+
+.p2{
+    color: var(--Dark-Gray);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+
+}
+.picture{
+
+    margin-top: 1rem;
+    margin-left: 6.3rem;
+    width: 100px;
+    height: 100px;
+    border: 3px var(--Light-Gold) solid;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.picture img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*Savings-plan-section*/
+
+.Savings-plan-header{
+    font-size: 28px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 8px;
+    font-family: "Poppins, sans-serif";
+    color: var(--Dark-Green);
+}
+
+.Savings-plan-header::after{
+    background-color: var(--Dark-Green);
+    max-width:250px;
+    font-family: "Poppins", sans-serif;
+    content: "";
+    transform: translateX(-50%);
+    width:50%;
+    height: 3px;
+    bottom:6px;
+    left: 50%;
+    position: absolute;
+    
+}
+/*Savings-Plan-Cards*/
+
+.Savings-card-container{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5.5rem;
+}
+
+.Savings-card{
+    background-color: #ffffff;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 22rem;
+    max-width: 85%;
+}
+
+.Savings-card h3{
+    
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color:var(--Dark-Green);
+    
+}
+.Savings-card li{
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    padding: 2px;
+    color: var(--Dark-Gray);
+    
+}
+.Cta-btn-2{
+    font-size: 14.5px;
+    background-color: var(--Light-Gold);
+    margin-left: 6.5rem;
+    margin-top: 0.2rem;
+    padding: 7px 14px  ;
+    border-radius: 6px;
+    border: none;
+    font-weight:bolder ;
+
+}
+
+.Cta-btn-2:hover{
+    background-color: var(--Dark-Green);
+    color:#ffffff;
+    box-shadow: inset 0.5rem 0.5rem 0.5rem var(--shadow-color);
+
+}
+
+
+
+
+
+@media screen and ( max-width:480px) {
+body{
+    
+    max-width: 100%;
+}
+/*Landing-page*/
+.landing-page{
+
+    max-width: 80%;
+}
+
+.page-header{
+    font-size:24.5px;
+    padding: 0.65rem;
+
+
+}
+.page-header2{
+    font-size: 20px;
+}
+
+p{
+    padding: 1rem;
+    font-size:1.2rem;
+    max-width: 100%;
+
+}
+
+.Cta-btn{
+    width:47%;
+    height: 2.5rem;
+    font-size: 16.5px;
+    font-weight: 700;
+    
+   }
+
+   /*About us section*/
+    #section{
+        max-width:93%;
+        margin-left: 1rem;
+        margin-top: 10rem;
+    
+    }
+
+    .section-header{
+        font-size: 27.5px;
+    }    
+    
+    .section-header2{
+        font-size: 19.5px;
+    }
+
+    section p{
+        font-size: 17.95px;
+    } 
+
+    /*Team-cards*/
+    
+.team-card-container{
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding:2.5rem;
+    gap: 2rem;
+}
+
+
+.card{  
+    
+
+    height: 20.95rem;
+    max-width: 100%;
+    width: 18.5rem;
+
+    
+}
+
+.picture{
+
+
+    margin-left:5.8rem;
+    
+}
+
+.p1{
+    font-size:16.5px;
+    margin: -1.5rem;
+  
+  }
+.p2{
+    
+    font-size:16.95px;
+
+  }
+
+  /*Savings-plan-section*/
+  .Savings-plan-header{
+    font-size: 30px;
+  }
+  
+  .Savings-plan-header::after{
+    width: 80%;
+  }
+  /*Savings-plan-card*/
+
+  .Savings-card-container{ 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2.5rem;
+    gap: 4rem;
+  }
+  .Savings-card{
+    height: 26.5rem;
+    max-width: 100%;
+    width: 18.5rem;
+    margin-left: -2rem;
+  }
+
+  .Savings-card h3{
+    font-size: 26px;
+  }
+
+  .Savings-card li{
+    font-size: 17px;
+    margin-top: -0.1rem;
+  }
+
+  .Cta-btn-2{
+    margin-left: 6rem;
+  }
+}
+
+
+@media screen and  (max-width:390px){
+/*About us section*/
+
+.section-header{
+    font-size: 27px;
+}    
+
+.section-header2{
+    font-size: 20.5px;
+}
+
+section p{
+    font-size: 20px;
+    
+} 
+.team-card-container{
+    margin: -0.85rem;
+}    
+}
