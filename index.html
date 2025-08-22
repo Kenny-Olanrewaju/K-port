@@ -3,194 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Picks For You</title>
-    <link rel="stylesheet" href="e.css">
-    <script defer src="offer-timer.js"></script>
+    <title>Kenny's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-            <div class="cart-dropdown-wrapper">
-                <div class="cart-icon" id="cartIcon">🛒</div>
-                <div class="cart-dropdown" id="cartDropdown">
-                    <p>Your cart is empty.</p>
-                </div>
+    <nav class="navbar" id="navbar">
+        <div class="picture"><img src="avatar.jpeg" alt=""></div>
+    <!--User-name-section-->
+        <div class="name">
+        <span class="first-name">Kenny</span>
+        <span class="last-name">Olanrewaju</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="#about-me-section">About</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        
+        </ul>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+
+    </nav>
+    <script src="script.js" defer></script>
+
+
+
+    <!--Hero-section-->
+    <section class="Hero-section">
+        
+        <div>
+            <!--Hero-badge-->
+            <div class="badge">
+                <div class="Code-icon"><img src="code-icon.png" alt=""></div>
+                <h3>Web Development Student</h3>
             </div>
-        </nav>
-    </header>
-    <div class="limited-offer-header">
-            LIMITED TIME OFFER! Ends in <span id="limited-offer-timer">01:00:00</span>
+
         </div>
-    <section class="hero">
-        <h1>Top Picks For You</h1>
-        <p>Discover Style. Embrace Confidence. Shop the Best!</p>
-        <a href="#" class="btn">Shop Now<a>
-    </section>
-    <!--Product-Grid-->
-    <section class="product-grid">
-        <div class="product-card">
-            <img src="https://i.pinimg.com/1200x/97/53/4b/97534b76c1d8417d2e4226a22c7fbff9.jpg" alt="">
-            <h3>SOLY HUX Sweatshirt</h3>
-            <p>₦43,500</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
+
+        <h1>Crafting Digital Experiences <br>Through Code</h1>
+        <p>I'm a passionate web development student turning ideas into interactive <br> realities. Focused on creating clean, user-friendly solutions with modern <br> technologies. </p>
+
+        <div class="Hero-buttons">
+            <!--Projects-button-->
+        <a href="projects.html" class="primary-btn">
+            <h3>View My Projects</h3>
+        <div class="Arrow-icon"><img src="arrow-right.png" alt=""></div>
+        </a>
+
+            <!--Github-button-->
+            <a href="https://github.com/Kenny-Olanrewaju?tab=repositories"  class="secondary-btn">
+                <div class="Github-icon"><img src="github-icon.png" alt=""></div>
+                <h3>View Github   </h3>
+            </a>
+
         </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/ea/85/1f/ea851f8ed0673873616dc1d593264ba1.jpg" alt="">
-            <h3>Adidas tubular X</h3>
-            <p>₦71,497</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')" >Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/1200x/b9/a3/ff/b9a3ffa7d7e3c1dd497753f8d41bc068.jpg" alt="">
-            <h3>LT casual tracksuit</h3>
-            <p>₦65,000</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/c0/44/8f/c0448f27e72c4484124650826ef8c07e.jpg" alt="">
-            <h3>GORGLITTER Men's Letter Varsity Jacket</h3>
-            <p>₦128,000</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/6a/a0/e4/6aa0e40efd732c63b3a1438b94b65126.jpg" alt="">
-            <h3>Air Jordan 4 Retro</h3>
-            <p>₦294,500</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/af/18/16/af1816dd30bf4cdbb91d47686490c448.jpg" alt="">
-            <h3>Nike Windrunner</h3>
-            <p>₦107,500</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')"> Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/49/57/7e/49577e9346430cd75f8f69d3ae06665c.jpg" alt="">
-            <h3>Louis Vuitton baseball cap</h3>
-            <p>₦36,750</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/1200x/a1/28/91/a12891b135d5cdeca704bf179dfd127b.jpg" alt="">
-            <h3>Nike Zoom Fly 6</h3>
-            <p>₦266,400</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/1200x/b8/4f/7b/b84f7b490fff8cbaaff2a1af7bdbdee0.jpg" alt="">
-            <h3>Dior Oblique Jacquard Backpack</h3>
-            <p>₦4,018,950</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/80/06/4d/80064d0c2cc45f962d943991840b8d4b.jpg" alt="">
-            <h3>Apple AirPods Max headphones</h3>
-            <p>₦800,284</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/1200x/cc/9f/d7/cc9fd7dd57d4842944475b5a61e232af.jpg" alt="">
-            <h3>Adidas Originals Beckenbauer Tracksuit</h3>
-            <p>₦198,320</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/9f/50/48/9f50487f0c3409462cb0d8ebbd5c8bdf.jpg" alt="">
-            <h3>Versace loafers</h3>
-            <p>₦49,000</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
+        <!--Achievement-Section-->
+        <div class="achievements-section">
+
+                
+                <div class="achievements">
+                    <div class="achievements-number">10+</div>
+                    <div class="achievements-label">Projects</div>    
+                </div>
+
+                
+                    <div class="divider"></div>
+                    <div class="achievements">
+                        <div class="achievements-number">3</div>
+                        <div class="achievements-label">Technologies</div>    
+                    </div>
+                    <div class="divider"></div>
+                    <div class="achievements">
+                        <div class="achievements-number">1+</div>
+                        <div class="achievements-label">Years Learning</div>    
+                    </div>
         </div>
         
+
+
+    </section>
+    <!--About-Me-Section-->
+    <section  class="about-me-section" id="about-me-section">
+        <h1 class="about-me-header">About <span>Me</span></h1>
+        <div class="about-content">
+
+            <div class="about-me-image"><img src="avatar.jpeg" alt=""></div>
+            <h2>Hello, I'm <span>Kenny</span> <span>Olanrewaju</span></h2>
+            <p class="about-me-text">I'm a dedicated web development student with a passion for creating responsive, user-friendly websites and applications. My journey in coding began over a year ago, and I've been constantly learning and improving my skills since then.</p>
+            <p class="about-me-text">I specialize in front-end development using HTML, CSS, and JavaScript, and I'm currently expanding my knowledge in frameworks and back-end technologies.</p>
+
+            <h3 class="skill-header">My Skills</h3>
+                <div class="skills-card-container">
+                    <div class="skill">
+                        <div class="html-card">
+                        <div id="html-card-header" >HTML</div>
+                        <div class="html-logo"><img src="html-icon.png" alt=""></div>
+                    </div>
+                        
+                </div>
+                    <div class="skill">
+                        <div class="css-card">
+                            <div  id="css-card-header">CSS</div>
+                        <div class="css-logo"><img src="css-icon.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="javascript-card">
+                            <div  id="javascript-card-header">JavaScript</div>
+                            <div class="javascript-logo"><img src="javascript.png" alt=""></div>
+                    </div>
+        </div>
+
+
+    </section>
+    <!--Contact-Section-->
+    <section class="contact-section"id="contact-section" >
+        <h2 class="contact-text"><span>Let's</span> Get Connected</h2>
+        <div class="divider2"></div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required >
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+    </section>
+    
+    <!--Faq-section-->
+    <section class="faq-section">
+        <h2 class="faq-header">Frequently Asked <span>Questions</span></h2>
+        <div class="faq-container">
+            
+            <div class="faq-card">
+                <h2>What technologies do you specialize in <span>?</span></h2>
+                <div>
+                    <h4 class="faq-answer">I specialize in modern web development technologies, including HTML, CSS, JavaScript, and frameworks like React, Vue.js, and Next.js. I also work with backend technologies such as Node.js and databases like MongoDB and PostgreSQL.</h4> 
+                </div>
+            </div>
+            <div class="faq-card">
+                <h2>What types of projects have you worked on <span>?</span></h2>
+                <div>
+                    <h4 class="faq-answer">I have experience working on various web applications, including e-commerce platforms, portfolio websites, blog systems, and dynamic web applications with user authentication and interactive features.</h4> 
+                </div>
+            </div>
+            <div class="faq-card">
+                <h2>Can you build mobile-responsive websites <span>?</span></h2>
+                <div>
+                    <h4 class="faq-answer">Yes! I ensure all websites I develop are fully responsive and optimized for different screen sizes, providing a seamless user experience across desktops, tablets, and mobile devices.</h4> 
+                </div>
+            </div>
+            <div class="faq-card">
+                <h2>Do you render custom web design <span>?</span></h2>
+                <div>
+                    <h4 class="faq-answer">Absolutely. I can create custom designs tailored to your brand identity and vision, ensuring your website stands out and aligns with your goals.</h4> 
+                </div>
+            </div>
+            <div class="faq-card">
+                <h2>How long does it take to develop a website <span>?</span></h2>
+                <div>
+                    <h4 class="faq-answer">The timeline depends on the complexity of the project. A simple portfolio website may take a few days, while a fully functional web application could take weeks. I work efficiently to deliver quality results within a reasonable timeframe.</h4> 
+                </div>
+            </div>
+            <div class="faq-card">
+                <h2>Do you provide ongoing maintenance and support <span>?</span></h2>
+                <div>
+                    <h4 class="faq-answer">Yes, I offer maintenance services to ensure your website remains secure, up to date, and performs optimally. I also provide support for updates and feature enhancements.</h4> 
+                </div>    
+            </div>
+        </div>
     </section>
 
-    <section class="featured">
-    <h2>FEATURED PRODUCTS</h2>
-    <div class="product-grid">
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/c3/0d/cb/c30dcb6a82cb608e2291938ea954916a.jpg" alt="">
-            <h3>Rolex Daytona</h3>
-            <p>₦27,332,790,000</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/11/0b/d2/110bd2e35b446190e859a7fde34067c9.jpg" alt="">
-            <h3>26.10 ct Fancy Yellow Diamond Tennis Necklace</h3>
-            <p>₦75,431,124.94</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/1200x/0d/ab/7a/0dab7ab7e391a1c3c44d6cd38ff26c7a.jpg" alt="">
-            <h3>Antonio Vietri's Moon Star Shoes</h3>
-            <p>₦30,703,662,000</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/a4/64/e8/a464e85564c8a358ee70a71fbfe57169.jpg" alt="">
-            <h3>Nike Air Yezzy 1</h3>
-            <p>₦2,763,338,490</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/1200x/b7/f3/1e/b7f31e4c087e8d0d1889aad9881bce57.jpg"   alt="">
-            <h3>Louis Vuitton SS 2024 Crocodile Baseball Jacket </h3>
-            <p>₦234,937,620</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/1200x/c7/92/b9/c792b971ee25afc3a92fb7e5528a096d.jpg" alt="">
-            <h3>18.0ct Rockfeller Emerald</h3>
-            <p>₦8,446,185,000</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/03/95/08/0395088d8548cfc5e5470fc511a429e7.jpg" alt="">
-            <h3>Hermès Himalaya Birkin Bag</h3>
-            <p>₦583,371,459</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/47/44/c0/4744c00fcc022d85c1f84d573c5ae776.jpg" alt="">
-            <h3>Focal Utopia Headphones</h3>
-            <p>₦184,222,566</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/2a/b1/fa/2ab1fab63af12d53f858a2a06a0d8ff3.jpg" alt="">
-            <h3>“The Last Dance” Air Jordan 13</h3>
-            <p>₦3,377,413,710</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/736x/a7/fa/91/a7fa91be7cc6350c5b197c37360c06d8.jpg" alt="">
-            <h3>Heritage In Bloom Diamond Necklace</h3>
-            <p>₦307,064,000,000</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/1200x/62/22/36/6222363efb6d2032ab79fca7968d6a91.jpg" alt="">
-            <h3>Première de Cartier CT0501S Sunglasses</h3>
-            <p>₦2,011,295,400</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://i.pinimg.com/1200x/d2/f8/e8/d2f8e8fc186a0019a9a170898175adfc.jpg" alt="">
-            <h3>L'Incomparable Diamond Necklace</h3>
-            <p>₦84,435,342,750</p>
-            <button class="add-to-cart" onclick="alert('This product has been added to the cart')">Add to Cart</button>
-        </div>
+    <!--footer-->
+    <footer>
+    <p>&copy; 2025 Kenny's Portfolio . All Rights Reserved.</p>
+    <p>Follow me on <a href="#"> Social Media </a></p>
+<div class="footer-links">
+    <a href="https://www.instagram.com/kenzocool20/"><img src="instagram logo.png" alt=""></a>
+    <a href=""><img src="tiktok logo.png" alt=""></a>
+    <a href=""><img src="facebook logo.png" alt=""></a>
+    <a href=""><img src="x logo.png" alt=""></a>
     </div>
-    </section>
-
-<footer>
-    <p>&copy; 2025 Kenny's Store. All rights reserved.</p>
 </footer>
-
-
 </body>
 </html>
