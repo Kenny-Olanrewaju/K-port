@@ -60,7 +60,7 @@ body{
     box-shadow: 0 2px 8px rgba(146, 141, 141, 0.2);
     padding: 1.5rem;
     transition: transform 0.3s;
-    animation: fadeIn 5s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
     animation-delay: 0.2s;
     
     }
