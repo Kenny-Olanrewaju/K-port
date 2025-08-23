@@ -197,8 +197,9 @@ nav a{
     transition: 0.8s ease-in-out;
 }
 
-.featured{
+.featured,.featured h2{
     background-color:whitesmoke;
+    text-align: center;
 }
 
 footer{
@@ -221,13 +222,10 @@ footer{
     font-size: 0.95em;
     padding: 8px 0;   
 }
+.cart-icon {
+    margin-left: 0;
+    font-size: 24px;
 
 }
 
-@media screen and (max-width: 800px) {
-    .cart-icon {
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 2rem;
-    }
 }
