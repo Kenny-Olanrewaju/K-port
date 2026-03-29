@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="36" viewBox="0 0 160 36" aria-labelledby="title">
+  <title id="title">FrameFlux logo</title>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#6F4CFF"/>
+    </linearGradient>
+    <style>
+      .f{font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight:700; font-size:18px;}
+      .s{fill:url(#g)}
+      .i{fill:#111}
+    </style>
+  </defs>
+  <!-- icon: stylized F made from two overlapping frames -->
+  <g transform="translate(0,2)">
+    <rect x="0" y="0" width="20" height="28" rx="4" fill="#0f1724" opacity="0.9"/>
+    <rect x="6" y="4" width="20" height="20" rx="3" fill="url(#g)" transform="rotate(-12 16 14)"/>
+    <rect x="12" y="8" width="20" height="12" rx="3" fill="#fff" opacity="0.06" transform="rotate(-12 22 14)"/>
+  </g>
+  <!-- wordmark -->
+  <text x="40" y="22" class="f s">FrameFlux</text>
+</svg>
